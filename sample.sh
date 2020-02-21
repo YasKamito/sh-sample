@@ -5,16 +5,16 @@ CMDNAME=$(basename $0)
 TMPFILE=/tmp/`basename ${CMDNAME}`.$$
 
 
-#•Ô‹p’l‚ðÝ’è
+#è¿”å´å€¤ã‚’è¨­å®š
 RC_OK=0
 RC_ERROR=1
 RC_CANCEL=2
 
-# ON/OFFƒtƒ‰ƒO‚ðƒZƒbƒg
+# ON/OFFãƒ•ãƒ©ã‚°ã‚’ã‚»ãƒƒãƒˆ
 FLG_OFF=0
 FLG_ON=1
 
-#ƒfƒtƒHƒ‹ƒg’l‚ðƒZƒbƒg
+#ãƒ‡ãƒ•ã‚©ãƒ«ãƒˆå€¤ã‚’ã‚»ãƒƒãƒˆ
 TRGDATE=`date +"%Y-%m-%d"`
 TRGCODE=12345
 RESTART_FLG=${FLG_OFF}
@@ -43,7 +43,7 @@ cat << EOF
 	Options:
 		--reboot, -r                   system reboot
 		--init, -i                     initialize
-		--date, -D       <date>        date@(YYYY-MM-DD)
+		--date, -D       <date>        dateã€€(YYYY-MM-DD)
 		--code, -C       <code>        code
 		--force, -f                    force mode
 		--version, -v                  version info
@@ -57,7 +57,7 @@ EOF
 ###############################
 yesno_chk()
 {
-  read ANSWER?"OKH(y/n)-->"
+  read ANSWER?"OKï¼Ÿ(y/n)-->"
   while true;do
     case ${ANSWER} in
       yes | y)
